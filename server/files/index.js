@@ -168,6 +168,19 @@ window.onload = function () {
       // Task 1.2: Render a user greeting to `#userGreeting` 
       // using `firstName`, `lastName`, and the server-provided
       // login timestamp.
+      const loginDate = new Date(currentSession.loginTime) //datum ist als text angegeben daraus machen wir ein js datumsobjeckt
+      const dateString = loginDate.toLocaleDateString("de-DE",{
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })
+
+      const timeString = loginDate.toLocaleTimeString("de-DE",{
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+
+      greetingElement.textContent = `Hi ${currentSession.firstName} ${currentSession.lastName}, du hast dich am ${dateString} um ${timeString} angemeldet.`;
     } else {
       greetingElement.textContent = messages.loggedOutGreeting;
     }
