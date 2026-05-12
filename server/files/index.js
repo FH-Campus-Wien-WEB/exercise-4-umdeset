@@ -216,6 +216,32 @@ window.onload = function () {
     // with username and password, handle errors, save the response 
     // into `currentSession`, then call `updateUI()` and `loadMovies()`.
 
+    //aus formdataobject wird ein js object.
+    const formObject = Object.fromEntries(formData.entries());
+    fetch(`/login`, { //http anfrage an /login starten
+      method: 'POST', //post damit man eingeben und senden kann
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formObject), //wandelt unseren formObject in ein string um damit wir das über netzwerk verschicken können
+    })
+        .then(response => { //wird ausgeführt sobald server uns antwortet
+          if (!response.ok) {
+            throw new Error(messages.loginFailed);
+          }
+          return response.json();
+        })
+        .then(userData => { //ergebnis von response.json landet hier
+          currentSession = userData;//in einem session variable speichernm
+          document.getElementById("loginDialog").close(); //login dialog von html finden und mit js schließen
+          updateUI(); //updaten damit login zu logout wird
+          loadMovies(); //filme von dem user laden
+        })
+    .catch(error => { //fängt fehler ab
+      console.error('Login failed:', error);
+      alert(messages.loginFailed);
+    })
+
   });
 
   document.getElementById('cancelLogin').addEventListener('click', () => {
