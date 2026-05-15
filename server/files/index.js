@@ -84,24 +84,24 @@ function loadMovies(genre) {
 }
 
 function addMovie(imdbID) {
-  fetch(`/movies/${imdbID}`, { method: 'PUT' })
-    .then(response => {
-      if (response.status === 201) {
-        // Task 2.2: Make sure to remove the added movie from the search results to avoid
-        // giving the user the option to add it again.
-    
-        loadMovies();
-        updateGenres();
-      } else if (response.status === 200) {
-        alert(messages.movieAlreadyInCollection);
-      } else {
-        throw new Error(`HTTP ${response.status}`);
-      }
-    })
-    .catch(error => {
-      console.error('Failed to add movie:', error);
-      alert(messages.addMovieFailed);
-    });
+  return fetch(`/movies/${imdbID}`, { method: 'PUT' })
+      .then(response => {
+        if (response.status === 201) {
+          // Task 2.2: Make sure to remove the added movie from the search results to avoid
+          // giving the user the option to add it again.
+
+          loadMovies();
+          updateGenres();
+        } else if (response.status === 200) {
+          alert(messages.movieAlreadyInCollection);
+        } else {
+          throw new Error(`HTTP ${response.status}`);
+        }
+      })
+      .catch(error => {
+        console.error('Failed to add movie:', error);
+        alert(messages.addMovieFailed);
+      });
 }
 
 function deleteMovie(imdbID) {
@@ -136,7 +136,31 @@ function searchMovies(query) {
       // Task 2.2: Render the results returned from the server. Make sure to
       // include an "Add" button for each result that calls `addMovie(imdbID)` when clicked.
       // There is a second part to this task, in `addMovie`
+    if (results.length === 0) {
+      resultsDiv.textContent = 'Could not find any results.';
+      return;
+    }
+    results.forEach(movie => {
+      const movieDiv = document.createElement("div"); // für den aktuellen film ein div erstellen
+      movieDiv.id = `results-${movie.imdbID}`; //div hat jetzt eine imbd id damit wir auch mit js den film easy löschen können
+      //text für den film erstellen
+      const textSpan = document.createElement("span");
+      textSpan.textContent = `${movie.Title} (${movie.Year})`;
+      //jetzt add button hinzugfügen
+      const addButton = document.createElement("button");
+      addButton.textContent = "Add";
+      addButton.onclick = () => {
+        addMovie(movie.imdbID).then(() => {
+          movieDiv.remove();
+        });
+      }
+      //alles zusammenpacken
+      movieDiv.appendChild(textSpan);
+      movieDiv.appendChild(addButton);
+      //film div noch in die liste geben
+      resultsDiv.appendChild(movieDiv);
 
+    })
     })
     .catch(error => {
       console.error('Search failed:', error);

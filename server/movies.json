@@ -1,84 +1,85 @@
 {
   "joe": {
-    "tt0399295": {
-      "imdbID": "tt0399295",
-      "Title": "Lord of War",
-      "Released": "2005-09-15",
-      "Runtime": 122,
+    "tt0103776": {
+      "imdbID": "tt0103776",
+      "Title": "Batman Returns",
+      "Released": "1992-06-18",
+      "Runtime": 126,
       "Genres": [
+        "Action",
         "Crime",
-        "Drama"
-      ],
-      "Directors": [
-        "Andrew Niccol"
-      ],
-      "Writers": [
-        "Andrew Niccol"
-      ],
-      "Actors": [
-        "Nicolas Cage",
-        "Ethan Hawke",
-        "Jared Leto"
-      ],
-      "Plot": "An arms dealer confronts the morality of his work as he is being chased by an INTERPOL Agent.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNThlY2NkYmMtNTFhNi00MzBiLWJmNzEtZjk5MzYwYWU2MjllXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 62,
-      "imdbRating": 7.6
-    },
-    "tt0167260": {
-      "imdbID": "tt0167260",
-      "Title": "The Lord of the Rings: The Return of the King",
-      "Released": "2003-12-16",
-      "Runtime": 201,
-      "Genres": [
-        "Adventure",
-        "Drama",
         "Fantasy"
       ],
       "Directors": [
-        "Peter Jackson"
+        "Tim Burton"
       ],
       "Writers": [
-        "J.R.R. Tolkien",
-        "Fran Walsh",
-        "Philippa Boyens"
+        "Bob Kane",
+        "Daniel Waters",
+        "Sam Hamm"
       ],
       "Actors": [
-        "Elijah Wood",
-        "Viggo Mortensen",
-        "Ian McKellen"
+        "Michael Keaton",
+        "Danny DeVito",
+        "Michelle Pfeiffer"
       ],
-      "Plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 94,
-      "imdbRating": 9
+      "Plot": "While Batman deals with a deformed man calling himself the Penguin wreaking havoc across Gotham with the help of a cruel businessman, a female employee of the latter becomes the Catwoman with her own vendetta.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZTliMDVkYTktZDdlMS00NTAwLWJhNzYtMWIwMDZjN2ViMGFiXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 68,
+      "imdbRating": 7.1
     },
-    "tt0057261": {
-      "imdbID": "tt0057261",
-      "Title": "Lord of the Flies",
-      "Released": "1963-08-12",
-      "Runtime": 92,
+    "tt3717532": {
+      "imdbID": "tt3717532",
+      "Title": "The Last: Naruto the Movie",
+      "Released": "2015-10-05",
+      "Runtime": 112,
       "Genres": [
-        "Adventure",
-        "Drama",
-        "Thriller"
+        "Animation",
+        "Action",
+        "Adventure"
       ],
       "Directors": [
-        "Peter Brook"
+        "Tsuneo Kobayashi"
       ],
       "Writers": [
-        "William Golding",
-        "Peter Brook"
+        "Maruo Kyôzuka",
+        "Masashi Kishimoto",
+        "Seth Walther"
       ],
       "Actors": [
-        "James Aubrey",
-        "Tom Chapin",
-        "Hugh Edwards"
+        "Junko Takeuchi",
+        "Nana Mizuki",
+        "Jun Fukuyama"
       ],
-      "Plot": "Schoolboys marooned on a Pacific island create their own savage civilization.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BY2RiOTM0ZDgtNDRlMi00MDMzLWI1NDYtY2NjZDM4YTkwNWVlXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 67,
-      "imdbRating": 6.9
+      "Plot": "Hinata Hyuga's younger sister has been kidnapped, so Naruto must do what he can to save her.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjk1NzA4Njg4Ml5BMl5BanBnXkFtZTgwMDgxODQ5MzE@._V1_SX300.jpg",
+      "Metascore": null,
+      "imdbRating": 7.6
+    },
+    "tt0253420": {
+      "imdbID": "tt0253420",
+      "Title": "Ortadirek Saban",
+      "Released": "N/A",
+      "Runtime": 85,
+      "Genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "Directors": [
+        "Kartal Tibet"
+      ],
+      "Writers": [
+        "Osman F. Seden"
+      ],
+      "Actors": [
+        "Kemal Sunal",
+        "Bahar Öztan",
+        "Yalcin Tülpar"
+      ],
+      "Plot": "Saban is in the struggle against Erkan who is the sportman to be boyfriend of Adnan Bicakci's niece.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOWI2M2NkYTEtNzA0YS00MjVhLTg0YjUtODAyNzA2MTA5MmVkXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": null,
+      "imdbRating": 7.2
     }
   },
   "jane": {
